@@ -3,6 +3,7 @@ import {View,TouchableOpacity, Image , StyleSheet} from 'react-native';
 import { Button,Text} from 'native-base';
 import RNImagePicker from 'react-native-image-picker';
 
+
 import Firebase from 'react-native-firebase';
 import Header from './Header';
 
@@ -24,8 +25,11 @@ RNImagePicker.showImagePicker({},res => {
   else {
     let source = { uri: res.uri };
     this.setState(source);
+    console.log(res);
 }
   });
+
+
 };
 
 
