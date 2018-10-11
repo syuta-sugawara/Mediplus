@@ -4,6 +4,7 @@ import { Container, Left, Body, Right, Title, Subtitle } from 'native-base';
 
 import Header from './Header';
 
+
 export default class Home extends React.Component{
 render(){
 return(

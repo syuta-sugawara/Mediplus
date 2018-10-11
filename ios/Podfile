@@ -8,8 +8,10 @@ target 'Mediplus' do
   # Pods for Mediplus
   pod 'Firebase/Core'
   pod 'FirebaseCore'
+  pod 'Firebase', '>= 2.5.1'
   pod 'Firebase/Storage', '~> 5.3.0'
   pod 'Firebase/Database', '~> 5.3.0'
+  pod 'Firebase/Auth'
 
   pod 'yoga', :path => '../node_modules/react-native/ReactCommon/yoga'
   pod 'React', :path => '../node_modules/react-native', :subspecs => [
@@ -21,6 +23,7 @@ target 'Mediplus' do
     'RCTWebSocket', # needed for debugging
     # Add any other subspecs you want to use in your project
   ]
+
 
    # Third party deps podspec link
   pod 'DoubleConversion', :podspec => '../node_modules/react-native/third-party-podspecs/DoubleConversion.podspec'
